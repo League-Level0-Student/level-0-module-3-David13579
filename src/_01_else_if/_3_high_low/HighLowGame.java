@@ -3,6 +3,8 @@ package _01_else_if._3_high_low;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class HighLowGame {
 
 	public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class HighLowGame {
 		// 11. Repeat steps 1 to 10 ten times
 		
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
-
+			String guess = JOptionPane.showInputDialog("Guess.");
 			// 4. Convert the users’ answer to an int (Integer.parseInt(string))
 			
 			// 5. if the guess is correct
