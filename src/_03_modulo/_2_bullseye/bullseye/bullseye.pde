@@ -8,15 +8,14 @@ size(400,400);
 void draw() {
   
   //Starting with the largest ellipse, use a for loop to draw a bullseye with ellipses.
-  for (int i=0;i<200;i++){
-    ellipse(200,200,200-i,200-i);
-    if (i % 40 ==0){
-    fill(#FF0000);
+  for (int i=0;i<200;i+=33){
+    if (i % 2 ==0){
+    fill(#FF1A00);
     }
-    else if (i % 20 ==0){
+    else if (i % 2 ==1){
       fill(#000000);
     }
-    
+    ellipse(200,200,200-i,200-i);
   }
   
   
